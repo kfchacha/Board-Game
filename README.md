@@ -22,13 +22,13 @@ The full workflow — from a developer pushing code to a live deployed applicati
 
 Every stage completed successfully in **1 minute 15 seconds**, from tool install through Kubernetes deployment and email notification.
 
-![Jenkins Build Stages](./screenshots/jenkins-stages-build22.png)
+![Jenkins Build Stages](./Project%20Screenshots/jenkins-build-stages.png)
 
 ### Multi-Build Stage View
 
 Comparing Build #22 (success) vs Build #21 (failed) — you can see the improvement across all stages.
 
-![Jenkins Multi-Pipeline Graph](./screenshots/jenkins-multi-pipeline.png)
+![Jenkins Multi-Pipeline Graph](./Project%20Screenshots/jenkins-failed-build.png)
 
 ---
 
@@ -86,7 +86,7 @@ Declarative: Tool Install → Git Checkout → Compilation → Test
 
 All components are hosted on **AWS EC2 in eu-north-1 (Stockholm)**.
 
-![AWS EC2 Instances](./screenshots/aws-ec2-instances.png)
+![AWS EC2 Instances](./Project%20Screenshots/aws-instances.png)
 
 | Instance | Type | Role |
 |---|---|---|
@@ -115,7 +115,7 @@ All components are hosted on **AWS EC2 in eu-north-1 (Stockholm)**.
 
 ### SonarQube Static Analysis
 
-![SonarQube Analysis](./screenshots/sonarqube-analysis.png)
+![SonarQube Analysis](./Project%20Screenshots/sonarcube-report.png)
 
 | Metric | Value | Rating |
 |---|---|---|
@@ -144,7 +144,7 @@ Maven artifacts are published to Nexus under:
 com.javaproject / database_service_project / 0.0.5-SNAPSHOT
 ```
 
-![Nexus Artifact Repository](./screenshots/nexus-repo.png)
+![Nexus Artifact Repository](./Project%20Screenshots/nexus-repo.png)
 
 ---
 
@@ -152,7 +152,7 @@ com.javaproject / database_service_project / 0.0.5-SNAPSHOT
 
 The live application is a **BoardGame Database** web app built with Java Spring Boot, deployed via Kubernetes NodePort on port `31968`.
 
-![Deployed Website](./screenshots/deployed-website.png)
+![Deployed Website](./Project%20Screenshots/deployed-website.png)
 
 Features:
 - Lists board games (Splendor, Clue, Linkee)
@@ -165,7 +165,7 @@ Features:
 
 Jenkins sends an automated email on every build via the **Extended Email Notification** plugin, including the Trivy image scan report as an attachment.
 
-![Gmail Build Notification](./screenshots/gmail-notification.png)
+![Gmail Build Notification](./Project%20Screenshots/build-mail-notification.png)
 
 ---
 
